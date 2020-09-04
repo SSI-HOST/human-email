@@ -1367,10 +1367,6 @@ body.outlook p {
         background: #003057 !important;
       }
 
-      .container {
-        border-radius: 30px;
-      }
-
       .nav {
         margin: 0;
         text-align: right;
@@ -1381,6 +1377,10 @@ body.outlook p {
         .nav {
           text-align: center;
           padding: 0;
+        }
+
+        .nav a {
+          padding-right: 0 !important;
         }
       }
 
@@ -1398,7 +1398,7 @@ body.outlook p {
       }
 
       .top-nav {
-        margin: 20px auto;
+        margin: 20px auto 0;
         text-align: center;
         padding: 30px;
         text-align: center;
@@ -1418,6 +1418,10 @@ body.outlook p {
         color: white;
       }
 
+      .lead-p-container {
+        padding: 0 !important;
+      }
+
       .lead-p {
         padding-right: 90px;
         padding-left: 30px;
@@ -1433,12 +1437,7 @@ body.outlook p {
 
       .three-p {
         color: #4E8416;
-        padding: 15px 30px;
         display: inline-block;
-      }
-
-      .container {
-        background: white;
       }
 
       h2, h3 {
@@ -1539,8 +1538,23 @@ body.outlook p {
         background: #4E8416;
       }
 
+      .container {
+        border: 30px 0 30px 30px;
+      }
+
       table td {
         border-collapse: collapse;
+      }
+
+      .hidden-for-outlook {
+        display:none !important;
+        font-size:1px !important;
+        color:#333333 !important;
+        line-height:1px !important;
+        max-height:0px !important;
+        max-width:0px !important;
+        opacity:0 !important;
+        overflow:hidden !important;
       }
     </style>
   </head>
@@ -1561,55 +1575,62 @@ body.outlook p {
               <tbody>
                 <tr>
                   <th style="text-align: center;">
-                      <div><a href="https://ssi-host.github.io/humana-email/">VIEW ONLINE</a></div>
-                      <div>|</div>
-                      <div><a href="mailto:Enter%20an%20email?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20https://ssi-host.github.io/humana-email/">FORWARD</a></div>
+                      <span><a href="https://ssi-host.github.io/humana-email/" style="color: white; font-size: 11px;">&nbsp;VIEW ONLINE&nbsp;</a></span>
+                      <span style="color: white; font-size: 11px;">&nbsp;|&nbsp;</span>
+                      <span><a  style="color: white; font-size: 11px;" href="mailto:Enter%20an%20email?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20https://ssi-host.github.io/humana-email/">&nbsp;FORWARD&nbsp;</a></span>
                   </th>
+                </tr>
+              </tbody>
+            </table>
+            <table class="spacer">
+              <tbody>
+                <tr>
+                  <td height="20px" style="font-size:16px;line-height:16px;">&#xA0;</td>
                 </tr>
               </tbody>
             </table>
             <table align="center" class="container float-center" width="660">
               <tbody>
                 <tr>
+                  <center data-parsed=""><img width="660" style="max-width: 660px;" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/border-top-all-white@2x.png" align="center" class="float-center"></center>
+                </tr>
+                <tr style="background: white;">
                   <td>
-                    <table class="spacer">
-                      <tbody>
-                        <tr>
-                          <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-                        </tr>
-                      </tbody>
-                    </table>
                     <table class="row">
                       <tbody>
                         <tr>
                           <th class="small-12 large-12 columns first last">
-                            <table style="margin-top: 20px;">
+                            <table>
                               <tr>
-                                <th>
+                                <th style="padding-top: 20px;">
                                   <table class="row">
                                     <tbody>
                                       <tr>
-                                        <th class="small-12 large-4 columns first">
-                                          <table>
-                                            <tr>
-                                              <th align="center" style="text-align: center;">
+                                        <th class="small-12 large-4 columns first" style="padding-bottom: 0";>
+                                          <table align="center" class="text-center">
+                                            <tr align="center" class="text-center">
+                                              <th align="center" class="text-center">
                                                 <a href="https://www.humana.com/"><img alt="logo" width="110" style="width: 110px; height: 21px; display: inline;" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/logo@2x.png" /></a>
                                               </th>
                                             </tr>
                                           </table>
                                         </th>
-                                        <th class="small-12 large-8 columns last">
-                                          <table>
+                                        <th class="small-12 large-8 columns last" style="padding-bottom: 0";>
+                                          <table align="right">
                                             <tr>
-                                              <th align="right">
-                                                <ul class="nav center-on-small">
-                                                  <li><a href="https://calendly.com/go365-jake/30min?month=2020-09
-">SCHEDULE A CALL</a></li>
-                                                </ul>
+                                              <th align="right" class="nav right-on-large center-on-small">
+                                                <a href="https://calendly.com/go365-jake/30min?month=2020-09" style="font-size: 11px; color: #4E8416; padding-right: 30px;">SCHEDULE A CALL</a>
                                               </th>
                                             </tr>
                                           </table>
                                         </th>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td height="16px" style="font-size:16px;line-height:16px;background-color:white;">&#xA0;</td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -1622,8 +1643,37 @@ body.outlook p {
                                   </table>
                                   <center data-parsed=""><img width="660" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/banner-top.png" align="center" class="float-center" alt="Have you fallen for these common myths about wellness?"></center>
                                   <center data-parsed=""><a href="https://www.go365.com/"><img width="660" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/banner-bottom.png" align="center" class="float-center" alt="go365"></a></center>
-                                  <p class="lead-p">There has been a lot of discussion and news about wellness programs, but they get mixed up with a lot of myths.</p>
-                                  <p class="three-p">Here are just three of them:</p>
+                                  <table class="row">
+                                    <tbody>
+                                      <tr>
+                                        <th class="small-12 large-6 columns first lead-p-container" style="padding: 30px;">
+                                          <table>
+                                            <tr>
+                                              <th>
+                                                <p class="lead-p">There has been a lot of discussion and news about wellness programs, but they get mixed up with a lot of myths.</p>
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="row">
+                                    <tbody>
+                                      <tr>
+                                        <th class="small-12 large-6 columns first">
+                                          <table>
+                                            <tr>
+                                              <th style="padding: 30px;">
+                                                <p class="three-p">Here are just three of them:</p>
+                                              </th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+
                                   <table class="row">
                                     <tbody>
                                       <tr>
@@ -1640,7 +1690,7 @@ body.outlook p {
                                           <table>
                                             <tr>
                                               <th style="padding: 30px;">
-                                                <img src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/dots@2x.png" style="width: 30px; height: 8px;"/>
+                                                <img width="30" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/dots@2x.png" style="width: 30px; height: 8px;"/>
                                                 <h2>Myth 1:</h2>
                                                 <h3>Wellness is hard to measure; <br/>
                                                 it can’t be quantified.</h3>
@@ -1660,11 +1710,11 @@ body.outlook p {
                                   <table class="row">
                                     <tbody>
                                       <tr>
-                                        <th class="small-12 hide-for-large" style="padding: 0;">
-                                          <table>
-                                            <tr>
-                                              <th>
-                                                <img width="330" alt="apple image" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" />
+                                        <th class="small-12 hide-for-large" style="padding: 0;mso-hide:all;">
+                                          <table  style="mso-hide:all;">
+                                            <tr  style="mso-hide:all;">
+                                              <th  style="mso-hide:all;">
+                                                <img   style="mso-hide:all;"width="330" alt="apple image" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" />
                                               </th>
                                             </tr>
                                           </table>
@@ -1687,7 +1737,7 @@ Our approach to wellness has a more holistic point of view—social, financial a
                                           <table>
                                             <tr>
                                               <th>
-                                                <img width="30" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" alt="apple image" />
+                                                <img width="330" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" alt="apple image" />
                                               </th>
                                             </tr>
                                           </table>
@@ -1730,22 +1780,28 @@ More than ever, people are working at home. But when wellness goes digital, empl
                                     <tbody>
                                       <tr class="action-callout">
                                         <th class="small-12 large-12 columns" style="padding: 30px !important;">
-                                          <h2 class="heavy">Intrigued? Skeptical?</h2>
-                                          <p>I want to hear from you about <br/>what you’ve experienced with wellness. </br>
-                                          Schedule a call with me, or just reply to chat.</p>
-                                          <p class="action-callout-smaller">I'm excited to talk more about Go365 or Humana EAP, but more importantly, to learn more about you and your organization.</p>
+                                          <table>
+                                            <tr>
+                                              <th style="padding: 30px;">
+                                                <h2 class="heavy">Intrigued? Skeptical?</h2>
+                                                <p>I want to hear from you about <br/>what you’ve experienced with wellness. <br/>
+                                                Schedule a call with me, or just reply to chat.</p>
+                                                <p class="action-callout-smaller">I'm excited to talk more about Go365 or Humana EAP, but more importantly, to learn more about you and your organization.</p>
 
-                                          <div class="sig">Best, <br/>Jake</div>
-                                          <center>
-                                          <table class="button">
-                                            <tbody>
-                                              <tr>
-                                                <td>
-                                                  <table>
-                                                    <tbody>
-                                                      <tr>
-                                                        <td style="text-align: center;"><a href="https://calendly.com/go365-jake/30min?month=2020-09
-">Schedule a Call</a></td>
+                                                <div class="sig">Best, <br/>Jake</div>
+                                                <center>
+                                                <table class="button">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                        <table>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="text-align: center;"><a href="https://calendly.com/go365-jake/30min?month=2020-09
+      ">Schedule a Call</a></td>
+                                              </th>
+                                            </tr>
+                                          </table>
                                                       </tr>
                                                     </tbody>
                                                   </table>
@@ -1758,16 +1814,22 @@ More than ever, people are working at home. But when wellness goes digital, empl
                                       </tr>
                                     </tbody>
                                   </table>
-                                  <center data-parsed=""><img width="660" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/border-to-white@2x.png" align="center" class="float-center"></center>
+                                  <center data-parsed=""><img width="660" height="159" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/border-to-white@2x.png" align="center" class="float-center"></center>
                                   <table class="row">
                                     <tbody>
                                       <tr>
-                                        <th class="small-12 large-12 columns" style="padding: 30px !important;">
-                                          <p class="small-p"><small>&sup1; Go365 Five-Year Study, 2019. <br/> http://apps.humana.com/marketing/documents.asp?file=3582176</small></p>
-                                          <p class="small-p"><small>&sup2; Humana EAP “By the Numbers” Employer Flyer. <br/> https://bit.ly/HumEAPNumbers</small></p>
-                                          <p class="small-p"><br/></p>
-                                          <p class="small-p"><small>Go365 is not an insurance product and is not available with all Humana health plans. <br/>This is a general description of services which are subject to change.<br/>
-        Please refer to Customer Support for more information. </small></p>
+                                        <th class="small-12 large-12 columns">
+                                          <table>
+                                            <tr>
+                                              <th style="padding: 30px">
+                                                <p class="small-p"><small>&sup1; Go365 Five-Year Study, 2019. <br/> http://apps.humana.com/marketing/documents.asp?file=3582176</small></p>
+                                                <p class="small-p"><small>&sup2; Humana EAP “By the Numbers” Employer Flyer. <br/> https://bit.ly/HumEAPNumbers</small></p>
+                                                <p class="small-p"><br/></p>
+                                                <p class="small-p"><small>Go365 is not an insurance product and is not available with all Humana health plans. <br/>This is a general description of services which are subject to change.<br/>
+              Please refer to Customer Support for more information. </small></p>
+                                              </th>
+                                            </tr>
+                                          </table>
                                         </th>
                                       </tr>
                                     </tbody>
