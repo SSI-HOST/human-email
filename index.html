@@ -79,16 +79,13 @@ table, tr, td {
 
 @media only screen {
   html {
-    min-height: 100%;
-    background: #f3f3f3; } }
+    min-height: 100%; } }
 
 table.body {
-  background: #f3f3f3;
   height: 100%;
   width: 100%; }
 
 table.container {
-  background: #fefefe;
   width: 660px;
   margin: 0 auto;
   Margin: 0 auto;
@@ -1364,11 +1361,12 @@ body.outlook p {
       body,
       html,
       .body {
+        background-color: #003057;
         background: #003057 !important;
       }
 
       .container {
-        border-radius: 30px;
+        background: none !important;
       }
 
       .nav {
@@ -1442,10 +1440,6 @@ body.outlook p {
       .three-p {
         color: #4E8416;
         display: inline-block;
-      }
-
-      .container {
-        background: white;
       }
 
       h2, h3 {
@@ -1536,6 +1530,7 @@ body.outlook p {
         font-size: 12px;
         text-align: center;
         padding: 20px;
+        padding-top: 0;
       }
 
       table.button table td {
@@ -1560,6 +1555,14 @@ body.outlook p {
         opacity:0 !important;
         overflow:hidden !important;
       }
+
+      .row {
+        background: white;
+      }
+
+      .row-no-background {
+        background: none;
+      }
     </style>
   </head>
 
@@ -1571,7 +1574,7 @@ body.outlook p {
     </div>
 
     <!-- <style> -->
-    <table class="body" data-made-with-foundation="">
+    <table class="body" data-made-with-foundation="" style="background-color: none;background: none;">
       <tr>
         <td class="float-center" align="center" valign="top">
           <center data-parsed="">
@@ -1593,14 +1596,16 @@ body.outlook p {
                 </tr>
               </tbody>
             </table>
-            <table align="center" class="container float-center" width="660">
+            <table align="center" class="container float-center" width="660" style="background-color: none;background: none;">
               <tbody>
                 <tr>
                   <td>
-                    <table class="spacer">
+                    <table class="row row-no-background" style="background-color: none;background: none;">
                       <tbody>
                         <tr>
-                          <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                          <th class="small-12 large-12 columns first last" style="padding-bottom: 0;">
+                            <img width="660" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/border-top-all-white@2x.png" align="center" class="float-center" alt="Have you fallen for these common myths about wellness?">
+                          </th>
                         </tr>
                       </tbody>
                     </table>
@@ -1718,11 +1723,11 @@ body.outlook p {
                                   <table class="row">
                                     <tbody>
                                       <tr>
-                                        <th class="small-12 hide-for-large" style="padding: 0;mso-hide:all;">
-                                          <table  style="mso-hide:all;">
-                                            <tr  style="mso-hide:all;">
-                                              <th  style="mso-hide:all;">
-                                                <img   style="mso-hide:all;"width="330" alt="apple image" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" />
+                                        <th class="small-12 show-for-small hide-for-large" style="padding: 0;mso-hide:all;">
+                                          <table style="mso-hide:all;">
+                                            <tr style="mso-hide:all;">
+                                              <th style="mso-hide:all;">
+                                                <img style="mso-hide:all;"width="330" alt="apple image" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/apple@2x.png" />
                                               </th>
                                             </tr>
                                           </table>
@@ -1734,9 +1739,9 @@ body.outlook p {
                                                 <img width="30" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/dots@2x.png" style="width: 30px; height: 8px;"/>
                                                 <h2>Myth 2:</h2>
                                                 <h3>Wellness is all about <br/>diet and exercise, right?</h3>
-
                                                 <p class="content-p">
-Our approach to wellness has a more holistic point of view—social, financial and mental well-being are just as important as physical well-being. Go365 and Humana EAP offer a balanced approach to well-being, with services like digital mindfulness apps, coaching and referrals to counselors and legal and financial professionals.</p>
+                                                  Our approach to wellness has a more holistic point of view—social, financial and mental well-being are just as important as physical well-being. Go365 and Humana EAP offer a balanced approach to well-being, with services like digital mindfulness apps, coaching and referrals to counselors and legal and financial professionals.
+                                                </p>
                                               </th>
                                             </tr>
                                           </table>
@@ -1771,11 +1776,11 @@ Our approach to wellness has a more holistic point of view—social, financial a
                                               <th style="padding: 30px;">
                                                 <img width="30" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/dots@2x.png" style="width: 30px; height: 8px;"/>
                                                 <h2>Myth 3:</h2>
-                                                <h3>Wellness is hard to do <br/>when everyone is remote.</h3>
+                                                <h3>Wellness is hard to do <br /> when everyone is remote.</h3>
 
                                                 <p class="content-p">
-More than ever, people are working at home. But when wellness goes digital, employees can stay connected. Humana EAP offers referrals to counselors that can include phone and video-based tele-counseling (chat-based tele-counseling coming soon!). And Go365 is available as an app so members can engage whenever, wherever they are.
-</p>
+                                                  More than ever, people are working at home. But when wellness goes digital, employees can stay connected. Humana EAP offers referrals to counselors that can include phone and video-based tele-counseling (chat-based tele-counseling coming soon!). And Go365 is available as an app so members can engage whenever, wherever they are.
+                                                </p>
                                               </th>
                                             </tr>
                                           </table>
@@ -1795,8 +1800,9 @@ More than ever, people are working at home. But when wellness goes digital, empl
                                                 <p>I want to hear from you about <br/>what you’ve experienced with wellness. <br/>
                                                 Schedule a call with me, or just reply to chat.</p>
                                                 <p class="action-callout-smaller">I'm excited to talk more about Go365 or Humana EAP, but more importantly, to learn more about you and your organization.</p>
-
+                                                <br/>
                                                 <div class="sig">Best, <br/>Jake</div>
+                                                <br/>
                                                 <center>
                                                 <table class="button">
                                                   <tbody>
@@ -1805,19 +1811,18 @@ More than ever, people are working at home. But when wellness goes digital, empl
                                                         <table>
                                                           <tbody>
                                                             <tr>
-                                                              <td style="text-align: center;"><a href="https://calendly.com/go365-jake/30min?month=2020-09
-      ">Schedule a Call</a></td>  
-                                              </th>
-                                            </tr>
-                                          </table>
-                                                      </tr>
-                                                    </tbody>
-                                                  </table>
-                                                </td>
+                                                              <th>
+                                                                <td style="text-align: center;"><a href="https://calendly.com/go365-jake/30min?month=2020-09">Schedule a Call</a></td>  
+                                                              </th>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
                                               </tr>
-                                            </tbody>
                                           </table>
-                                        </center>
                                         </th>
                                       </tr>
                                     </tbody>
@@ -1832,9 +1837,12 @@ More than ever, people are working at home. But when wellness goes digital, empl
                                               <th style="padding: 30px">
                                                 <p class="small-p"><small>&sup1; Go365 Five-Year Study, 2019. <br/> http://apps.humana.com/marketing/documents.asp?file=3582176</small></p>
                                                 <p class="small-p"><small>&sup2; Humana EAP “By the Numbers” Employer Flyer. <br/> https://bit.ly/HumEAPNumbers</small></p>
-                                                <p class="small-p"><br/></p>
-                                                <p class="small-p"><small>Go365 is not an insurance product and is not available with all Humana health plans. <br/>This is a general description of services which are subject to change.<br/>
-              Please refer to Customer Support for more information. </small></p>
+                                                <p class="small-p">&nbsp;</p>
+                                                <p class="small-p">
+                                                  <small>
+                                                    Go365 is not an insurance product and is not available with all Humana health plans. <br/>This is a general description of services which are subject to change.<br/>Please refer to Customer Support for more information.
+                                                  </small>
+                                                </p>
                                               </th>
                                             </tr>
                                           </table>
@@ -1851,10 +1859,20 @@ More than ever, people are working at home. But when wellness goes digital, empl
                         </tr>
                       </tbody>
                     </table>
+                    <table class="row row-no-background"  style="background-color: none;">
+                      <tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns first last">
+                            <img width="660" src="https://raw.githubusercontent.com/ssi-host/humana-email/master/assets/border-bottom-all-white@2x.png" align="center" class="float-center" alt="Have you fallen for these common myths about wellness?">
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
+            
           </center>
         </td>
       </tr>
